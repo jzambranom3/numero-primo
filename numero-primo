@@ -1,0 +1,14 @@
+#Evalua si son primos devuelve True y de lo contrario devolvera False 
+def isPrime(num):
+    if num == 2:
+        return True
+    else:
+        for i in range(2, num):#for (i=2;i<=num,i++)
+            if num % i == 0:
+                return False
+        return True   
+numero = int(input("Ingrese un número: "))
+if isPrime(numero) == True:
+    print (numero, " es número PRIMO")
+else:
+    print (numero, " es número NO PRIMO")
